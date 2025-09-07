@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SHAMROCK — English Language Solutions</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/flipCards.css" />
+    <link rel="stylesheet" href="css/courseModal.css" />
+    <link rel="canonical" href="https://shamrockenglishsolutions.es/" />
+    <link rel="alternate" href="https://shamrockenglishsolutions.es/" hreflang="es" />
+    <link rel="alternate" href="https://shamrockenglishsolutions.es/en" hreflang="en" />
+    <link rel="alternate" href="https://shamrockenglishsolutions.es/" hreflang="x-default" />
+    <title>Academia de inglés en Logroño | Shamrock — English Language Solutions</title>
+    <meta name="description" content="Academia de inglés en Logroño. Clases para niños, jóvenes, adultos y empresas. Preparación Cambridge, Trinity, IELTS, TOEFL y EOI. Horarios flexibles." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Shamrock" />
+    <meta property="og:title" content="Academia de inglés en Logroño | Shamrock" />
+    <meta property="og:description" content="Clases de inglés para todas las edades y preparación de exámenes oficiales en Logroño." />
+    <meta property="og:url" content="https://shamrockenglishsolutions.es/" />
+    <meta property="og:image" content="https://shamrockenglishsolutions.es/assets/img/og-cover.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Academia de inglés en Logroño | Shamrock" />
+    <meta name="twitter:description" content="Clases de inglés y preparación de certificados en Logroño." />
+    <meta name="twitter:image" content="https://shamrockenglishsolutions.es/assets/img/og-cover.jpg" />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="logo" aria-label="Inicio">
+          <img src="assets/img/logo.png" alt="Shamrock" width="80" height="auto" />
+        </a>
+
+        <nav class="nav" id="main-nav" aria-label="Principal">
+          <a href="#inicio" data-i18n="nav.home">Inicio</a>
+          <a href="#cursos" data-i18n="nav.courses">Cursos</a>
+          <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+        </nav>
+
+        <div class="header-cta">
+          <button class="lang-switch" aria-label="Cambiar idioma">
+            <span class="lang lang--active" data-lang="es">ES</span>
+            <span class="divider">⏽</span>
+            <span class="lang" data-lang="en">EN</span>
+          </button>
+
+          <button type="button" class="hamburger" id="btn-menu" aria-label="Abrir menú" aria-controls="main-nav" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Backdrop para el menú móvil -->
+    <div class="nav-backdrop" id="nav-backdrop" hidden></div>
+
+    <!-- Hero -->
+    <main id="inicio">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>
+              <span class="brand" data-i18n="hero.brand">SHAMROCK</span><br />
+              <span class="sub" data-i18n="hero.tagline">English Language Solutions</span>
+            </h1>
+            <p class="lead" data-i18n="hero.lead">
+              Aprender, mejorar, perfeccionar o simplemente disfrutar.
+              Cualquier motivación que tengas hay una solución para ti.
+            </p>
+            <a href="#cursos" class="btn btn-primary" data-i18n="hero.cta">
+              VER CURSOS <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="hero-media" aria-hidden="true">
+            <img src="assets/img/hero.png" alt="Estudiante chica joven" />
+          </div>
+        </div>
+      </section>
+
+      <section id="ofrecemos" class="one">
+        <div class="container one-grid">
+          <div class="one-media">
+            <img src="assets/img/profesor.png" alt="Profesor con libro" width="360" height="auto" />
+            <div class="one-underline" aria-hidden="true"></div>
+            </div>
+
+            <div class="one-features">
+            <h2 class="one-title" data-i18n="offer.title">¿QUÉ OFRECEMOS?</h2>
+
+            <ul class="feature-list">
+
+              <li class="feature">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h3 data-i18n="offer.experience.title">Amplia Experiencia</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <p data-i18n="offer.experience.desc">Profesionales con más de 25 años de experiencia.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="feature">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h3 data-i18n="offer.teachers.title">Profesorado Nativo y Bilingüe</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <p data-i18n="offer.teachers.desc">Clases dinámicas orientadas a objetivos reales.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="feature">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h3 data-i18n="offer.certs.title">Preparación de Certificados</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <p data-i18n="offer.certs.desc">Cambridge, Trinity, IELTS, Aptis, TOEFL, EOI.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="feature">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h3 data-i18n="offer.business.title">Planes para Empresas</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <p data-i18n="offer.business.desc">Formación in-company adaptada a tu sector.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="feature">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h3 data-i18n="offer.schedules.title">Horarios Flexibles</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <p data-i18n="offer.schedules.desc">Modalidad presencial y online, individuales y grupos.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="feature">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h3 data-i18n="offer.method.title">Metodología Propia</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <p data-i18n="offer.method.desc">Materiales prácticos y seguimiento continuo.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="feature">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h3 data-i18n="offer.assessment.title">Evaluaciones Periódicas</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <p data-i18n="offer.assessment.desc">Informes de progreso con recomendaciones.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="feature">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h3 data-i18n="offer.care.title">Atención Cercana</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <p data-i18n="offer.care.desc">Trato personalizado para cada estudiante.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>      
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="cursos" class="courses">
+        <div class="container">
+          <h2 class="section-title" data-i18n="courses.title">NUESTROS CURSOS</h2>
+          <ul class="course-grid">
+            <li class="course-card">
+              <article>
+                <div class="media">
+                  <img src="assets/img/niñas.png" alt="Curso para niños de 3 a 6 años" loading="lazy" />
+                </div>
+                <div class="body">
+                  <h3 class="course-title" data-i18n="courses.kids">Niños (3-6 años)</h3>
+                  <button class="btn btn-primary btn-sm" data-i18n="courses.more">
+                    Saber más <span aria-hidden="true">↗</span>
+                  </button>
+                </div>
+              </article>
+            </li>
+
+            <li class="course-card">
+              <article>
+                <div class="media">
+                  <img src="assets/img/preadolescentes.png" alt="Curso para jóvenes de 7 a 11 años" loading="lazy" />
+                </div>
+                <div class="body">
+                  <h3 class="course-title" data-i18n="courses.preteens">Jóvenes (7-11 años)</h3>
+                  <button class="btn btn-primary btn-sm" data-i18n="courses.more">
+                    Saber más <span aria-hidden="true">↗</span>
+                  </button>
+                </div>
+              </article>
+            </li>
+
+            <li class="course-card">
+              <article>
+                <div class="media">
+                  <img src="assets/img/adolescentes.png" alt="Curso para adolescentes" loading="lazy" />
+                </div>
+                <div class="body">
+                  <h3 class="course-title" data-i18n="courses.teens">Adolescentes</h3>
+                  <button class="btn btn-primary btn-sm" data-i18n="courses.more">
+                    Saber más <span aria-hidden="true">↗</span>
+                  </button>
+                </div>
+              </article>
+            </li>
+
+            <li class="course-card">
+              <article>
+                <div class="media">
+                  <img src="assets/img/adultos.png" alt="Curso para adultos" loading="lazy" />
+                </div>
+                <div class="body">
+                  <h3 class="course-title" data-i18n="courses.adults">Adultos</h3>
+                  <button class="btn btn-primary btn-sm" data-i18n="courses.more">
+                    Saber más <span aria-hidden="true">↗</span>
+                  </button>
+                </div>
+              </article>
+            </li>
+
+            <li class="course-card">
+              <article>
+                <div class="media">
+                  <img src="assets/img/empresarios.png" alt="Inglés para empresas" loading="lazy" />
+                </div>
+                <div class="body">
+                  <h3 class="course-title" data-i18n="courses.business">Empresas</h3>
+                  <button class="btn btn-primary btn-sm" data-i18n="courses.more">
+                    Saber más <span aria-hidden="true">↗</span>
+                  </button>
+                </div>
+              </article>
+            </li>
+
+            <li class="course-card">
+              <article>
+                <div class="media">
+                  <img src="assets/img/certificados.png" alt="Preparación de exámenes oficiales" loading="lazy" />
+                </div>
+                <div class="body">
+                  <h3 class="course-title" data-i18n="courses.exams">Exámenes Oficiales</h3>
+                  <button class="btn btn-primary btn-sm" data-i18n="courses.more">
+                    Saber más <span aria-hidden="true">↗</span>
+                  </button>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Modal cursos -->
+      <div class="modal fade" id="courseModal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" role="document">
+            <div class="modal-header">
+              <h3 class="modal-title" id="courseModalTitle">Título del curso</h3>
+              <button type="button" class="btn-close" aria-label="Close" data-dismiss="modal">×</button>
+            </div>
+
+            <div class="modal-body">
+              <div class="modal-media">
+                <img id="courseModalImg" src="" alt="" />
+              </div>
+              <p id="courseModalDesc" class="modal-text">Descripción del curso…</p>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn" data-dismiss="modal" data-i18n="modal.close">
+                Cerrar
+              </button>
+              <button type="button" id="masInfo" class="btn btn-primary" data-i18n="modal.moreInfo">
+                Quiero más info
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-backdrop" id="courseModalBackdrop" hidden></div>
+
+
+      <section id="contacto" class="contact">
+        <div class="container">
+          <h2 class="section-title" data-i18n="contact.title">CONTACTO</h2>
+          <div class="contact-grid">
+            
+            <!-- Formulario -->
+            <form action="sendmail.php" method="POST" id="contact-form" class="contact-card">
+              <h3 class="form-title" data-i18n="form.title">Estamos encantados de ayudarte</h3>
+
+              <label class="field">
+                <span data-i18n="form.name">Nombre</span>
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+
+              <div class="field-2col">
+                <label class="field">
+                  <span data-i18n="form.email">Correo</span>
+                  <input type="email" name="email" autocomplete="email" required />
+                </label>
+                <label class="field">
+                  <span data-i18n="form.phone">Teléfono</span>
+                  <input type="tel" name="phone" autocomplete="tel" />
+                </label>
+              </div>
+
+              <label class="field">
+                <span data-i18n="form.message">Mensaje</span>
+                <textarea name="message" rows="5" required></textarea>
+              </label>
+
+              <!-- Casilla RGPD -->
+              <div class="field">
+                <label style="margin-top: 6px; font-size: .9rem;">
+                  <input type="checkbox" name="privacy" required />
+                  <span data-i18n="form.privacy">
+                    Acepto la <a href="/politica-privacidad" target="_blank">Política de privacidad</a>
+                  </span>
+                </label>
+              </div>
+
+              <button class="btn btn-primary btn-full" type="submit" data-i18n="form.send">
+                ENVIAR <span aria-hidden="true">↗</span>
+              </button>
+              <p class="form-hint" id="form-hint" role="status" aria-live="polite"></p>
+            </form>
+
+            <!-- Alternativas de contacto -->
+            <aside class="contact-alt">
+              <p class="alt-title" data-i18n="contact.alt">También puedes contactarnos a través de:</p>
+
+              <a class="alt-btn alt-tel" href="tel:+34611800174">
+                <span class="icon">📞</span>
+                <span data-i18n="contact.phone"> Teléfono</span>
+              </a>
+
+              <a class="alt-btn alt-wa" target="_blank"
+                 href="https://wa.me/34611800174?text=Hola%20Shamrock,%20me%20gustaría%20información.">
+                <span class="icon">🟢</span>
+                <span> Whatsapp</span>
+              </a>
+            </aside>
+          </div>
+
+          <!-- Mapa -->
+          <div class="map-wrap">
+            <p class="map-title" data-i18n="contact.addressLabel">Visítenos en Calle 7 Infantes de Lara nº 16</p>
+            <div class="map-embed">
+              <iframe
+                title="Ubicación Shamrock"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+                src="https://www.google.com/maps?q=Calle%207%20Infantes%20de%20Lara%2016&output=embed">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-logo" aria-hidden="true">
+            <a href="/" class="logo" aria-label="Inicio">
+              <img src="assets/img/icon.png" alt="" width="40" height="40" />             
+            </a>
+          </div>
+
+          <div class="footer-grid">
+            <!-- Col 1 -->
+            <section class="foot-col">
+              <h4 class="foot-title">
+                <span class="ico">🕒</span> <span data-i18n="footer.hours">Horario</span>
+              </h4>
+              <ul class="foot-list">
+                <li data-i18n="footer.hours.morning">Mañanas: 10:00 – 14:00</li>
+                <li data-i18n="footer.hours.afternoon">Tardes: 16:30 – 20:00</li>
+              </ul>
+            </section>
+
+            <!-- Col 2 -->
+            <section>
+              <h4 class="foot-title">
+                <span class="ico">📍</span> <span data-i18n="footer.where">Dónde encontrarnos</span>
+              </h4>
+              <ul class="foot-list">
+                <li data-i18n="footer.address.line">C/ Siete Infantes de Lara, 16</li>
+                <li><a href="https://maps.google.com/maps?ll=42.456977,-2.461647&z=16&t=m&hl=es-ES&gl=US&mapclient=embed&q=C.%20Siete%20Infantes%20de%20Lara%2C%2016%2026007%20Logro%C3%B1o%20La%20Rioja" data-i18n="footer.address.map">Ver en Google Maps</a></li>
+              </ul>
+            </section>
+
+            <!-- Col 3 -->
+            <section class="foot-col">
+              <h4 class="foot-title" data-i18n="footer.contact">Contacto</h4>
+              <ul class="foot-list foot-contacts">
+                <li>
+                  <span class="ico">📞</span>
+                  <a href="tel:611800174 ">611800174 </a>
+                </li>
+                <li>
+                  <span class="ico">✆</span>
+                  <a href="https://wa.me/611800174 " target="_blank" rel="noopener noreferrer">603639304</a>
+                </li>
+              </ul>
+            </section>
+
+            <!-- Col 4 -->
+            <nav class="foot-col" aria-label="Enlaces de interés">
+              <h4 class="foot-title" data-i18n="footer.links">Enlaces de interés</h4>
+              <ul class="foot-list">
+                <li><a href="#cursos" data-i18n="footer.link.certs">Preparación para certificados</a></li>
+                <li><a href="#cursos" data-i18n="footer.link.business">Inglés para empresas</a></li>
+                <li><a href="#cursos" data-i18n="footer.link.private">Clases particulares</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-bottom">
+            <p>© <span id="year"></span> Shamrock English Language Solutions. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <!-- Modal éxito envío -->
+    <div class="modal fade" id="formOkModal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" role="document">
+          <div class="modal-header">
+            <h3 class="modal-title" data-i18n="form.ok.title">¡Mensaje enviado!</h3>
+            <button type="button" class="btn-close" aria-label="Cerrar" data-dismiss="modal">×</button>
+          </div>
+          <div class="modal-body">
+            <p class="modal-text" data-i18n="form.ok.body">
+              Gracias por contactarnos. Te responderemos lo antes posible.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/modalCursos.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
