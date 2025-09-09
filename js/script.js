@@ -208,14 +208,13 @@ const I18N = {
     "offer.assessment.desc":"Informes de progreso con recomendaciones.",
     "offer.care.title":"Atención Cercana",
     "offer.care.desc":"Trato personalizado para cada estudiante.",
-
-    "courses.title":"NUESTROS CURSOS","courses.kids":"Niños (3-6 años)","courses.preteens":"Jóvenes (7-11 años)","courses.teens":"Adolescentes","courses.adults":"Adultos","courses.business":"Empresas","courses.exams":"Exámenes Oficiales","courses.more":"Saber más ↗",
-
     "contact.title":"CONTACTO","contact.alt":"También puedes contactarnos a través de:","contact.phone":" Teléfono","contact.addressLabel":"Visítenos en Calle 7 Infantes de Lara nº 16",
 
     /* Modal (títulos/desc) */
-    "courses.kids.title":"Niños (3-6 años)",
-    "courses.kids.desc":"Curso divertido y dinámico adaptado a los más pequeños.",
+    "courses.title":"NUESTROS CURSOS",
+    "courses.more": 'Saber más <span aria-hidden="true">↗</span>',
+    "courses.inmersive.title":"Experiencia Inmersiva",
+    "courses.inmersive.desc":"Práctica continua en un entorno 100% en inglés: clases, talleres y actividades culturales.",
     "courses.preteens.title":"Jóvenes (7-11 años)",
     "courses.preteens.desc":"Actividades en grupo para estimular la comunicación en inglés.",
     "courses.teens.title":"Adolescentes",
@@ -259,13 +258,12 @@ const I18N = {
     "offer.care.title":"Close Attention",
     "offer.care.desc":"Personalized care for every student.",
 
-    "courses.title":"OUR COURSES","courses.kids":"Kids (3–6)","courses.preteens":"Juniors (7–11)","courses.teens":"Teens","courses.adults":"Adults","courses.business":"Business","courses.exams":"Official Exams","courses.more":"Learn more ↗",
-
     "contact.title":"CONTACT","contact.alt":"You can also contact us via:","contact.phone":" Phone","contact.addressLabel":"Visit us at Calle 7 Infantes de Lara nº 16",
 
     /* Modal (títulos/desc) */
-    "courses.kids.title":"Kids (3–6)",
-    "courses.kids.desc":"Fun and dynamic course tailored to the little ones.",
+    "courses.title":"OUR COURSES",
+    "courses.more": 'Learn more <span aria-hidden="true">↗</span>',
+    "courses.inmersive.title": "Immersive Experience","courses.inmersive.desc": "Continuous practice in a 100% English environment: classes, workshops, and cultural activities.",
     "courses.preteens.title":"Juniors (7–11)",
     "courses.preteens.desc":"Group activities to stimulate communication in English.",
     "courses.teens.title":"Teens",
@@ -288,6 +286,7 @@ const I18N = {
 
 const DEFAULT_LANG = "es";
 
+// 2) Mejora applyLang para que acepte claves base (fallback a ".title")
 function applyLang(lang) {
   const dict = I18N[lang] || I18N[DEFAULT_LANG];
   document.documentElement.setAttribute('lang', lang);
@@ -295,8 +294,9 @@ function applyLang(lang) {
 
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
-    const val = dict[key];
-    if (val) el.innerHTML = val;
+    // intento directo, luego ".title", luego ".label"
+    const val = dict[key] ?? dict[`${key}.title`] ?? dict[`${key}.label`];
+    if (val != null) el.innerHTML = val;
   });
 
   // Si hay una modal abierta, re-tradúcela usando la clave guardada
@@ -304,7 +304,7 @@ function applyLang(lang) {
   if (modal?.classList.contains('show') && modal.dataset.courseKey){
     const titleEl = document.getElementById('courseModalTitle');
     const descEl  = document.getElementById('courseModalDesc');
-    const baseKey = modal.dataset.courseKey; // p.ej. "courses.kids"
+    const baseKey = modal.dataset.courseKey; // p.ej. "courses.teens"
     titleEl.textContent = dict[`${baseKey}.title`] || dict[baseKey] || titleEl.textContent;
     descEl.textContent  = dict[`${baseKey}.desc`]  || descEl.textContent;
   }
