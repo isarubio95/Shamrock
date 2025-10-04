@@ -23,7 +23,7 @@
     const baseKey = getBaseKeyFromCard(card); // "courses.kids"
     const lang = document.documentElement.getAttribute('lang') || 'es';
     const dict = I18N[lang] || I18N.es;
-
+m
     if (baseKey){
       modal.dataset.courseKey = baseKey; // guardar para re-traducir si cambia el idioma
       titleEl.textContent = dict[`${baseKey}.title`] || dict[baseKey] || card.querySelector('.course-title')?.textContent?.trim() || 'Curso';
